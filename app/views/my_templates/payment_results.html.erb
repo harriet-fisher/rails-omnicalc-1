@@ -8,7 +8,7 @@
 <body>
   <dl>
     <dt>APR</dt>
-    <dd><%= ((@apr*100).round(4)).to_fs(:percentage)%></dd>
+    <dd><%= format("%.4f", params.fetch("user_apr").to_f)%>%</dd>
     <dt>Number of years</dt>
     <dd><%=@years%></dd>
     <dt>Principal</dt>
